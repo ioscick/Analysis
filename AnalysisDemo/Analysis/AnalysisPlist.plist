@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>UserCenterController</key>
+	<dict>
+		<key>UserCenterFunctionModuleCell/CollectionView02/15</key>
+		<string>658</string>
+		<key>UserCenterFunctionModuleCell/CollectionView02/16</key>
+		<string>651</string>
+		<key>UserCenterOrderCell/CollectionView00</key>
+		<string>643</string>
+		<key>UserCenterController/CollectionView</key>
+		<string>639</string>
+	</dict>
+</dict>
+</plist>
