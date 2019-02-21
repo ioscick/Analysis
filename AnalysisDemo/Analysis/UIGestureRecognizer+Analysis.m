@@ -10,7 +10,7 @@
 #import "UIView+AnalysisBind.h"
 #import "ExchangeMethodTool.h"
 #import "TrackListManager.h"
-#import "UIViewController+CurrentViewController.h"
+#import "NSObject+CurrentController.h"
 #import <objc/runtime.h>
 
 static NSString *analysisTagString = @"analysisTagString";
@@ -36,7 +36,7 @@ static NSString *analysisTagString = @"analysisTagString";
 - (instancetype)analysis_initWithTarget:(id)target action:(SEL)action {
     id gester = [self analysis_initWithTarget:target action:action];
     if ([gester isKindOfClass:[UITapGestureRecognizer class]]) {
-        self.analysisTag = [NSString stringWithFormat:@"%@/%@/%@", NSStringFromClass([[UIViewController yh_currentViewController] class]), NSStringFromClass([target class]), NSStringFromSelector(action)];
+        self.analysisTag = [NSString stringWithFormat:@"%@/%@/%@", NSStringFromClass([[NSObject currentController] class]), NSStringFromClass([target class]), NSStringFromSelector(action)];
         [gester analysis_addTarget:[TrackListManager shareInstance] action:@selector(gestureTrack:)];
     }
     return gester;
@@ -45,7 +45,7 @@ static NSString *analysisTagString = @"analysisTagString";
 - (void)analysis_addTarget:(id)target action:(SEL)action {
     [self analysis_addTarget:target action:action];
     if ([self isKindOfClass:[UITapGestureRecognizer class]]) {
-        self.analysisTag = [NSString stringWithFormat:@"%@/%@/%@", NSStringFromClass([[UIViewController yh_currentViewController] class]), NSStringFromClass([target class]), NSStringFromSelector(action)];
+        self.analysisTag = [NSString stringWithFormat:@"%@/%@/%@", NSStringFromClass([[NSObject currentController] class]), NSStringFromClass([target class]), NSStringFromSelector(action)];
         [self analysis_addTarget:[TrackListManager shareInstance] action:@selector(gestureTrack:)];
     }
 }

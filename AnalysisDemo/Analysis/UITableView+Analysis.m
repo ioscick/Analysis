@@ -10,7 +10,7 @@
 #import "ExchangeMethodTool.h"
 #import "TrackListManager.h"
 #import "UIView+AnalysisBind.h"
-#import "UIViewController+CurrentViewController.h"
+#import "NSObject+CurrentController.h"
 
 @implementation UITableView (Analysis)
 
@@ -32,7 +32,7 @@
 
 - (void)analysis_tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath {
     UITableViewCell *cell = [tableView cellForRowAtIndexPath:indexPath];
-    NSString *trackid = [NSString stringWithFormat:@"%@/%@/TableView%ld%ld", NSStringFromClass([[UIViewController yh_currentViewController] class]), NSStringFromClass([self class]), (long)indexPath.section, (long)indexPath.row];
+    NSString *trackid = [NSString stringWithFormat:@"%@/%@/TableView%ld%ld", NSStringFromClass([[NSObject currentController] class]), NSStringFromClass([self class]), (long)indexPath.section, (long)indexPath.row];
     if (cell.tag > 0) {
         trackid = [trackid stringByAppendingString:[NSString stringWithFormat:@"/%ld", (long)cell.tag]];
     }

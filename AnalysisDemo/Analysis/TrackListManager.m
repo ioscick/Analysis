@@ -7,10 +7,10 @@
 //
 
 #import "TrackListManager.h"
-#import "UIViewController+CurrentViewController.h"
+#import "NSObject+CurrentController.h"
 #import "UIView+AnalysisBind.h"
-#import "GGJTrackManager.h"
-#import "GGJTrackClick.h"
+//#import "GGJTrackManager.h"
+//#import "GGJTrackClick.h"
 #import "UIGestureRecognizer+Analysis.h"
 
 @interface TrackListManager ()
@@ -69,10 +69,10 @@
                 //进行埋点统计
                 NSLog(@"tableView All trackID is %@ trackmodel is %@", self.trackdict[trackString], trackModel);
                 if (trackModel) {
-                    NSDictionary *attributes = [GGJTrackClick attributesWithTargetId:trackModel.trackId targetName:trackModel.trackName type:nil];
-                    [GGJTrackClick logEvent:[self.trackdict[viewID] intValue] attributes:attributes];
+//                    NSDictionary *attributes = [GGJTrackClick attributesWithTargetId:trackModel.trackId targetName:trackModel.trackName type:nil];
+//                    [GGJTrackClick logEvent:[self.trackdict[viewID] intValue] attributes:attributes];
                 } else {
-                    [GGJTrackClick logEvent:[self.trackdict[viewID] intValue] attributes:nil];
+//                    [GGJTrackClick logEvent:[self.trackdict[viewID] intValue] attributes:nil];
                 }
                 return;
             }
@@ -85,10 +85,10 @@
     //进行埋点统计
     NSLog(@"trackID is %@ trackmodel is %@", self.trackdict[viewID], trackModel);
     if (trackModel) {
-        NSDictionary *attributes = [GGJTrackClick attributesWithTargetId:trackModel.trackId targetName:trackModel.trackName type:nil];
-        [GGJTrackClick logEvent:[self.trackdict[viewID] intValue] attributes:attributes];
+//        NSDictionary *attributes = [GGJTrackClick attributesWithTargetId:trackModel.trackId targetName:trackModel.trackName type:nil];
+//        [GGJTrackClick logEvent:[self.trackdict[viewID] intValue] attributes:attributes];
     } else {
-        [GGJTrackClick logEvent:[self.trackdict[viewID] intValue] attributes:nil];
+//        [GGJTrackClick logEvent:[self.trackdict[viewID] intValue] attributes:nil];
     }
     
 }

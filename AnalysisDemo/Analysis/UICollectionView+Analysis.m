@@ -10,7 +10,7 @@
 #import "ExchangeMethodTool.h"
 #import "TrackListManager.h"
 #import "UIView+AnalysisBind.h"
-#import "UIViewController+CurrentViewController.h"
+#import "NSObject+CurrentController.h"
 
 @implementation UICollectionView (Analysis)
 
@@ -33,7 +33,7 @@
 - (void)analysis_collectionView:(UICollectionView *)collectionView didSelectItemAtIndexPath:(NSIndexPath *)indexPath {
     UICollectionViewCell *cell = [collectionView cellForItemAtIndexPath:indexPath];
     NSLog(@"%@Collection%ld%ld", NSStringFromClass([self class]), indexPath.section, indexPath.row);
-    NSString *trackId = [NSString stringWithFormat:@"%@/%@/CollectionView%ld%ld", NSStringFromClass([[UIViewController yh_currentViewController] class]), NSStringFromClass([self class]), indexPath.section, indexPath.row];
+    NSString *trackId = [NSString stringWithFormat:@"%@/%@/CollectionView%ld%ld", NSStringFromClass([[NSObject currentController] class]), NSStringFromClass([self class]), indexPath.section, indexPath.row];
     if (cell.tag > 0) {
         trackId = [trackId stringByAppendingString:[NSString stringWithFormat:@"/%ld", cell.tag]];
     }

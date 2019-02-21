@@ -15,6 +15,18 @@
 		8A71C4D921DEF5D9003D8589 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 8A71C4D821DEF5D9003D8589 /* main.m */; };
 		8A71C4E321DEF5D9003D8589 /* AnalysisDemoTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 8A71C4E221DEF5D9003D8589 /* AnalysisDemoTests.m */; };
 		8A71C4EE21DEF5D9003D8589 /* AnalysisDemoUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 8A71C4ED21DEF5D9003D8589 /* AnalysisDemoUITests.m */; };
+		8AC1430421E5C7B7009FC3FA /* TableViewTrackViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8AC1430321E5C7B7009FC3FA /* TableViewTrackViewController.m */; };
+		8AF5ADFB2212EEDA000A3D83 /* UICollectionView+Analysis.m in Sources */ = {isa = PBXBuildFile; fileRef = 8AF5ADE92212EEDA000A3D83 /* UICollectionView+Analysis.m */; };
+		8AF5ADFC2212EEDA000A3D83 /* ExchangeMethodTool.m in Sources */ = {isa = PBXBuildFile; fileRef = 8AF5ADEB2212EEDA000A3D83 /* ExchangeMethodTool.m */; };
+		8AF5ADFD2212EEDA000A3D83 /* UITableView+Analysis.m in Sources */ = {isa = PBXBuildFile; fileRef = 8AF5ADEE2212EEDA000A3D83 /* UITableView+Analysis.m */; };
+		8AF5ADFE2212EEDA000A3D83 /* UIApplication+Analysis.m in Sources */ = {isa = PBXBuildFile; fileRef = 8AF5ADEF2212EEDA000A3D83 /* UIApplication+Analysis.m */; };
+		8AF5ADFF2212EEDA000A3D83 /* TrackListManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 8AF5ADF12212EEDA000A3D83 /* TrackListManager.m */; };
+		8AF5AE002212EEDA000A3D83 /* AnalysisPlist.plist in Resources */ = {isa = PBXBuildFile; fileRef = 8AF5ADF22212EEDA000A3D83 /* AnalysisPlist.plist */; };
+		8AF5AE012212EEDA000A3D83 /* UIView+AnalysisBind.m in Sources */ = {isa = PBXBuildFile; fileRef = 8AF5ADF32212EEDA000A3D83 /* UIView+AnalysisBind.m */; };
+		8AF5AE022212EEDA000A3D83 /* TrackModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 8AF5ADF52212EEDA000A3D83 /* TrackModel.m */; };
+		8AF5AE032212EEDA000A3D83 /* UIGestureRecognizer+Analysis.m in Sources */ = {isa = PBXBuildFile; fileRef = 8AF5ADF62212EEDA000A3D83 /* UIGestureRecognizer+Analysis.m */; };
+		8AF5AE042212EEDA000A3D83 /* UIViewController+Analysis.m in Sources */ = {isa = PBXBuildFile; fileRef = 8AF5ADF82212EEDA000A3D83 /* UIViewController+Analysis.m */; };
+		8AF5AE0A2212EF92000A3D83 /* NSObject+CurrentController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8AF5AE092212EF92000A3D83 /* NSObject+CurrentController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -51,6 +63,30 @@
 		8A71C4E921DEF5D9003D8589 /* AnalysisDemoUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = AnalysisDemoUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		8A71C4ED21DEF5D9003D8589 /* AnalysisDemoUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AnalysisDemoUITests.m; sourceTree = "<group>"; };
 		8A71C4EF21DEF5D9003D8589 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		8AC1430221E5C7B7009FC3FA /* TableViewTrackViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TableViewTrackViewController.h; sourceTree = "<group>"; };
+		8AC1430321E5C7B7009FC3FA /* TableViewTrackViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TableViewTrackViewController.m; sourceTree = "<group>"; };
+		8AF5ADE72212EEDA000A3D83 /* TrackListManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TrackListManager.h; sourceTree = "<group>"; };
+		8AF5ADE82212EEDA000A3D83 /* AnalysisDemo.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AnalysisDemo.h; sourceTree = "<group>"; };
+		8AF5ADE92212EEDA000A3D83 /* UICollectionView+Analysis.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UICollectionView+Analysis.m"; sourceTree = "<group>"; };
+		8AF5ADEA2212EEDA000A3D83 /* UIView+AnalysisBind.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+AnalysisBind.h"; sourceTree = "<group>"; };
+		8AF5ADEB2212EEDA000A3D83 /* ExchangeMethodTool.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ExchangeMethodTool.m; sourceTree = "<group>"; };
+		8AF5ADEC2212EEDA000A3D83 /* TrackModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TrackModel.h; sourceTree = "<group>"; };
+		8AF5ADED2212EEDA000A3D83 /* UIGestureRecognizer+Analysis.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIGestureRecognizer+Analysis.h"; sourceTree = "<group>"; };
+		8AF5ADEE2212EEDA000A3D83 /* UITableView+Analysis.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UITableView+Analysis.m"; sourceTree = "<group>"; };
+		8AF5ADEF2212EEDA000A3D83 /* UIApplication+Analysis.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIApplication+Analysis.m"; sourceTree = "<group>"; };
+		8AF5ADF02212EEDA000A3D83 /* UIViewController+Analysis.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIViewController+Analysis.h"; sourceTree = "<group>"; };
+		8AF5ADF12212EEDA000A3D83 /* TrackListManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TrackListManager.m; sourceTree = "<group>"; };
+		8AF5ADF22212EEDA000A3D83 /* AnalysisPlist.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = AnalysisPlist.plist; sourceTree = "<group>"; };
+		8AF5ADF32212EEDA000A3D83 /* UIView+AnalysisBind.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+AnalysisBind.m"; sourceTree = "<group>"; };
+		8AF5ADF42212EEDA000A3D83 /* UICollectionView+Analysis.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UICollectionView+Analysis.h"; sourceTree = "<group>"; };
+		8AF5ADF52212EEDA000A3D83 /* TrackModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TrackModel.m; sourceTree = "<group>"; };
+		8AF5ADF62212EEDA000A3D83 /* UIGestureRecognizer+Analysis.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIGestureRecognizer+Analysis.m"; sourceTree = "<group>"; };
+		8AF5ADF72212EEDA000A3D83 /* ExchangeMethodTool.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ExchangeMethodTool.h; sourceTree = "<group>"; };
+		8AF5ADF82212EEDA000A3D83 /* UIViewController+Analysis.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIViewController+Analysis.m"; sourceTree = "<group>"; };
+		8AF5ADF92212EEDA000A3D83 /* UIApplication+Analysis.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIApplication+Analysis.h"; sourceTree = "<group>"; };
+		8AF5ADFA2212EEDA000A3D83 /* UITableView+Analysis.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UITableView+Analysis.h"; sourceTree = "<group>"; };
+		8AF5AE082212EF92000A3D83 /* NSObject+CurrentController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "NSObject+CurrentController.h"; sourceTree = "<group>"; };
+		8AF5AE092212EF92000A3D83 /* NSObject+CurrentController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "NSObject+CurrentController.m"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -101,10 +137,13 @@
 		8A71C4C821DEF5D8003D8589 /* AnalysisDemo */ = {
 			isa = PBXGroup;
 			children = (
+				8AF5ADE62212EEDA000A3D83 /* Analysis */,
 				8A71C4C921DEF5D8003D8589 /* AppDelegate.h */,
 				8A71C4CA21DEF5D8003D8589 /* AppDelegate.m */,
 				8A71C4CC21DEF5D8003D8589 /* ViewController.h */,
 				8A71C4CD21DEF5D8003D8589 /* ViewController.m */,
+				8AC1430221E5C7B7009FC3FA /* TableViewTrackViewController.h */,
+				8AC1430321E5C7B7009FC3FA /* TableViewTrackViewController.m */,
 				8A71C4CF21DEF5D8003D8589 /* Main.storyboard */,
 				8A71C4D221DEF5D9003D8589 /* Assets.xcassets */,
 				8A71C4D421DEF5D9003D8589 /* LaunchScreen.storyboard */,
@@ -130,6 +169,35 @@
 				8A71C4EF21DEF5D9003D8589 /* Info.plist */,
 			);
 			path = AnalysisDemoUITests;
+			sourceTree = "<group>";
+		};
+		8AF5ADE62212EEDA000A3D83 /* Analysis */ = {
+			isa = PBXGroup;
+			children = (
+				8AF5ADE82212EEDA000A3D83 /* AnalysisDemo.h */,
+				8AF5ADF22212EEDA000A3D83 /* AnalysisPlist.plist */,
+				8AF5ADF72212EEDA000A3D83 /* ExchangeMethodTool.h */,
+				8AF5ADEB2212EEDA000A3D83 /* ExchangeMethodTool.m */,
+				8AF5AE082212EF92000A3D83 /* NSObject+CurrentController.h */,
+				8AF5AE092212EF92000A3D83 /* NSObject+CurrentController.m */,
+				8AF5ADE72212EEDA000A3D83 /* TrackListManager.h */,
+				8AF5ADF12212EEDA000A3D83 /* TrackListManager.m */,
+				8AF5ADEC2212EEDA000A3D83 /* TrackModel.h */,
+				8AF5ADF52212EEDA000A3D83 /* TrackModel.m */,
+				8AF5ADF92212EEDA000A3D83 /* UIApplication+Analysis.h */,
+				8AF5ADEF2212EEDA000A3D83 /* UIApplication+Analysis.m */,
+				8AF5ADF42212EEDA000A3D83 /* UICollectionView+Analysis.h */,
+				8AF5ADE92212EEDA000A3D83 /* UICollectionView+Analysis.m */,
+				8AF5ADED2212EEDA000A3D83 /* UIGestureRecognizer+Analysis.h */,
+				8AF5ADF62212EEDA000A3D83 /* UIGestureRecognizer+Analysis.m */,
+				8AF5ADFA2212EEDA000A3D83 /* UITableView+Analysis.h */,
+				8AF5ADEE2212EEDA000A3D83 /* UITableView+Analysis.m */,
+				8AF5ADEA2212EEDA000A3D83 /* UIView+AnalysisBind.h */,
+				8AF5ADF32212EEDA000A3D83 /* UIView+AnalysisBind.m */,
+				8AF5ADF02212EEDA000A3D83 /* UIViewController+Analysis.h */,
+				8AF5ADF82212EEDA000A3D83 /* UIViewController+Analysis.m */,
+			);
+			path = Analysis;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -235,6 +303,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8AF5AE002212EEDA000A3D83 /* AnalysisPlist.plist in Resources */,
 				8A71C4D621DEF5D9003D8589 /* LaunchScreen.storyboard in Resources */,
 				8A71C4D321DEF5D9003D8589 /* Assets.xcassets in Resources */,
 				8A71C4D121DEF5D8003D8589 /* Main.storyboard in Resources */,
@@ -263,8 +332,19 @@
 			buildActionMask = 2147483647;
 			files = (
 				8A71C4CE21DEF5D8003D8589 /* ViewController.m in Sources */,
+				8AF5AE042212EEDA000A3D83 /* UIViewController+Analysis.m in Sources */,
+				8AF5ADFC2212EEDA000A3D83 /* ExchangeMethodTool.m in Sources */,
+				8AF5AE0A2212EF92000A3D83 /* NSObject+CurrentController.m in Sources */,
+				8AC1430421E5C7B7009FC3FA /* TableViewTrackViewController.m in Sources */,
+				8AF5AE022212EEDA000A3D83 /* TrackModel.m in Sources */,
 				8A71C4D921DEF5D9003D8589 /* main.m in Sources */,
+				8AF5AE032212EEDA000A3D83 /* UIGestureRecognizer+Analysis.m in Sources */,
+				8AF5ADFE2212EEDA000A3D83 /* UIApplication+Analysis.m in Sources */,
+				8AF5ADFB2212EEDA000A3D83 /* UICollectionView+Analysis.m in Sources */,
 				8A71C4CB21DEF5D8003D8589 /* AppDelegate.m in Sources */,
+				8AF5AE012212EEDA000A3D83 /* UIView+AnalysisBind.m in Sources */,
+				8AF5ADFF2212EEDA000A3D83 /* TrackListManager.m in Sources */,
+				8AF5ADFD2212EEDA000A3D83 /* UITableView+Analysis.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

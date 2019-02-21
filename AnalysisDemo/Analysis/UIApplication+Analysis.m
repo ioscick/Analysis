@@ -10,7 +10,7 @@
 #import "ExchangeMethodTool.h"
 #import "TrackListManager.h"
 #import "UIView+AnalysisBind.h"
-#import "UIViewController+CurrentViewController.h"
+#import "NSObject+CurrentController.h"
 
 @implementation UIApplication (Analysis)
 
@@ -25,7 +25,7 @@
     if (![sender isKindOfClass:[UIView class]]) {
         return [self analysis_sendAction:action to:target from:sender forEvent:event];
     }
-    NSString *trackid = [NSString stringWithFormat:@"%@/%@/%@", NSStringFromClass([[UIViewController yh_currentViewController] class]), NSStringFromClass([target class]), NSStringFromSelector(action)];
+    NSString *trackid = [NSString stringWithFormat:@"%@/%@/%@", NSStringFromClass([[NSObject currentController] class]), NSStringFromClass([target class]), NSStringFromSelector(action)];
     UIView *targetView = sender;
     if (targetView.tag > 0) {
         trackid = [trackid stringByAppendingString:[NSString stringWithFormat:@"%ld", targetView.tag]];
